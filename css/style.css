@@ -1,1 +1,54 @@
 /* TODO: Make it awesome */
+
+header {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color:plum;
+}
+header li{
+  padding: 10px;
+}
+
+h1{
+  padding: 20px;
+  border: 5px solid purple;
+}
+nav{
+  padding: 10px;
+  border: 5px solid wheat;
+}
+
+.copy li{
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top:10px;
+  border: 5px solid blue;
+}
+#catalog {
+  display: block;
+  text-align: center;
+  margin: 30px auto;
+  padding: 30px;
+  background-color:mediumturquoise;
+}
+legend{
+  padding-bottom: 20px;
+  border: 2px solid silver;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+table{
+  background-color: darkseagreen;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border: 3px solid darkgreen;
+  padding: 10px;
+  margin-bottom: 30px;
+}
