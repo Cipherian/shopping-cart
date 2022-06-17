@@ -3,7 +3,7 @@
 'use strict';
 
 // Set up an empty cart for use on this page.
-let cart = new Cart([]);
+const cart = new Cart([]);
 
 
 // On screen load, we call this method to put all of the busmall options
@@ -38,12 +38,10 @@ function handleSubmit(event) {
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
   // TODO: suss out the item picked from the select list
-for (let i = 0; i < Product.allProducts.length; i++){
-  let selectedItem = document.getElementsByTagName('options')[i];
-  console.log(selectedItem);
-}
-// *****Ask about getting item selected & pushing to 'cart'*****
-
+  let item = document.getElementById('items').value
+  let quantity = document.getElementById('quantity').value
+  cart.addItem(item,quantity);
+  console.log(cart);
   // TODO: get the quantity
   // TODO: using those, add one item to the Cart
 }
