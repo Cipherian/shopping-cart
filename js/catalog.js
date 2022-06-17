@@ -38,21 +38,35 @@ function handleSubmit(event) {
 // TODO: Add the selected item and quantity to the cart
 function addSelectedItemToCart() {
   // TODO: suss out the item picked from the select list
-for (let i = 0; i < Product.allProducts.length; i++){
-  let selectedItem = document.getElementsByTagName('options')[i];
-  console.log(selectedItem);
+  let item = document.getElementById('items').value;
+  let quantity = document.getElementById('quantity').value;
+  cart.addItem(item, quantity);
 }
 // *****Ask about getting item selected & pushing to 'cart'*****
 
   // TODO: get the quantity
   // TODO: using those, add one item to the Cart
-}
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+function updateCounter() {
+  let itemCount = document.getElementById('itemCount');
+  itemCount.innerText = cart.items.length;
+
+}
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
+  let product = null;
+  let cartContents = document.getElementById('cart-contents');
+  let item = document.getElementById('items').value;
+  for (let i = 0; i < Product.allProducts.length;i++) {
+    if (Product.allProducts[i].name == item) {
+      product = Product.allProducts[i];
+    }
+  }
+  let productImg = document.createElement('img');
+  productImg.src = product.filePath;
+  cartContents.appendChild(productImg);
   // TODO: Get the item and quantity from the form
   // TODO: Add a new element to the cartContents div with that information
 }
