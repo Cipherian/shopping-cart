@@ -1,14 +1,22 @@
 /* TODO: Make it awesome */
 html {
-  background-color: bisque;
+  background-color: rgba(247, 222, 62, 0.551);
   color:block'
 }
 main {
   height: 800px;
 }
+
 h1 {
   font-size: 2rem;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  color:midnightblue;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
+
 header {
   display: block;
   text-align: center;
@@ -17,45 +25,71 @@ header {
 nav{
   padding: 10px;
   font-size: 1.25rem;
-  background-color: darkgray;
+  background-color: rgba(150, 202, 237, 0.762);
   border: 2px solid black;
   border-left: none;
   border-right: none;
   text-align: center;
 }
-
+a{
+  text-decoration: none;
+  font-family:'Gill Sans', sans-serif
+}
 header li{
   padding: 10px;
 }
 img {
-  width: 100px;
-  height:100px;
-}
-h1{
+  width: 150px;
+  height:150px;
   padding: 20px;
 }
+
+
 ul {
+  margin: auto;
+  width:25%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 
-p {
-
-}
 #itemCount{
-  margin-left: 10px;
-  border: 2px solid black;
-  border-radius: 50%;
-  padding: 3px;
-  color: blue;
+  margin-left: 0px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  color: rgb(4, 4, 49);
   width: 25px;
   height: 25px;
 }
+ol li{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color:rgb(4, 4, 49);
+  font-size: 20px;
+}
+fieldset span{
+  margin-right: 10px;
+}
+#catalog{
+  background-color: floralwhite;
+  font-family: 'Lucida Sans', sans-serif;
+}
+legend{
+  font-size: 1.25em;
+}
+select{
+  margin-right: 20px;
+}
+input{
+  margin-right: 20px;
+}
+
 .copy li{
   padding-left: 30px;
   padding-bottom: 10px;
   padding-top:10px;
+  font-family:'Trebuchet MS', sans-serif;
 }
 #catalog {
   display: block;
@@ -75,10 +109,31 @@ footer {
 }
 
 table{
-  display: block;
-  margin: auto;
-  text-align: center;
-  border: 3px solid darkgreen;
-  padding: 10px;
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  border: 3px solid rgb(114, 135, 114);
+  background-color:floralwhite;
 }
+
+tr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+th{
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Lucida Sans',sans-serif;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+td{
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+/* CSS grid might be a better way to do the table, but I played with it for a while and couldn't figure out how to get it to work. The cart looks pretty good except the quantity data gets weird because of the different lengths of the names of the products. 

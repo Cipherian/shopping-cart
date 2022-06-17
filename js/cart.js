@@ -40,9 +40,10 @@ function showCart() {
     tableDeleteLink.innerText = "X";
     tableDeleteLink.id = i;
 
-    tableRow.appendChild(tableItem);
-    tableRow.appendChild(tableQuantity);
     tableRow.appendChild(tableDeleteLink);
+    tableRow.appendChild(tableQuantity);
+    tableRow.appendChild(tableItem);
+    
     tableBody.appendChild(tableRow);
   }
 

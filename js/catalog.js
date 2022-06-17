@@ -50,7 +50,7 @@ function addSelectedItemToCart() {
 // TODO: Update the cart count in the header nav with the number of items in the Cart
 let sum = 0;
 let itemCount = document.getElementById('itemCount');
-itemCount.innerText = sum;
+itemCount.innerText = ': '+ sum;
 function updateCounter() {
   sum = 0;
   let counterArray = [];
