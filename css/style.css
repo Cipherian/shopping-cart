@@ -4,7 +4,7 @@ html {
   color:block'
 }
 main {
-  height: 600px;
+  height: 800px;
 }
 h1 {
   font-size: 2rem;
@@ -14,11 +14,18 @@ header {
   text-align: center;
   margin: auto;
 }
+nav{
+  padding: 10px;
+  font-size: 1.25rem;
+  background-color: darkgray;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+
 header li{
   padding: 10px;
-}
-#itemCount {
-  color:black;
 }
 img {
   width: 100px;
@@ -27,16 +34,23 @@ img {
 h1{
   padding: 20px;
 }
-nav{
-  padding: 10px;
-  border: 2px solid black;
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
+
 p {
 
 }
 #itemCount{
-  margin-top: 50px;
-  display: block;
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 3px;
+  color: blue;
+  width: 25px;
+  height: 25px;
 }
 .copy li{
   padding-left: 30px;
