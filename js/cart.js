@@ -58,7 +58,7 @@ function removeItemFromCart(event) {
   cart.saveToLocalStorage();
   // TODO: Save the cart back to local storage
   // TODO: Re-draw the cart table
-  showCart();
+  renderCart();
 }
 
 // This will initialize the page and draw the cart on screen

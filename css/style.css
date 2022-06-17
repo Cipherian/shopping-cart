@@ -1,42 +1,71 @@
 /* TODO: Make it awesome */
-
+html {
+  background-color: bisque;
+  color:block'
+}
+main {
+  height: 800px;
+}
+h1 {
+  font-size: 2rem;
+}
 header {
   display: block;
   text-align: center;
   margin: auto;
-  background-color:plum;
-}
-header li{
-  padding: 10px;
-}
-#itemCount {
-  color:black;
-}
-h1{
-  padding: 20px;
-  border: 5px solid black;
 }
 nav{
   padding: 10px;
-  border: 5px solid wheat;
+  font-size: 1.25rem;
+  background-color: darkgray;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  text-align: center;
 }
 
+header li{
+  padding: 10px;
+}
+img {
+  width: 100px;
+  height:100px;
+}
+h1{
+  padding: 20px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+p {
+
+}
+#itemCount{
+  margin-left: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 3px;
+  color: blue;
+  width: 25px;
+  height: 25px;
+}
 .copy li{
   padding-left: 30px;
   padding-bottom: 10px;
   padding-top:10px;
-  border: 5px solid black;
 }
 #catalog {
   display: block;
   text-align: center;
   margin: 30px auto;
   padding: 30px;
-  background-color:mediumturquoise;
+  border: 2px solid black;
 }
 legend{
   padding-bottom: 20px;
-  border: 2px solid silver;
 }
 
 footer {
@@ -46,7 +75,6 @@ footer {
 }
 
 table{
-  background-color: darkseagreen;
   display: block;
   margin: auto;
   text-align: center;
