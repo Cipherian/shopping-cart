@@ -51,7 +51,6 @@ function addSelectedItemToCart() {
 function updateCounter() {
   let itemCount = document.getElementById('itemCount');
   itemCount.innerText = cart.items.length;
-
 }
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
