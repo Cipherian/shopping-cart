@@ -45,11 +45,13 @@ ul {
 #itemCount{
   margin-left: 0px;
   padding-left: 3px;
-  padding-bottom: 3px;
+  padding-bottom: 8px;
+  vertical-align: top;
   color: rgb(4, 4, 49);
+  font-size: .9rem;
   width: 25px;
   height: 25px;
-  text-decoration: none;
+  color:blue;
 }
 a{
   text-decoration: none;
@@ -141,6 +143,7 @@ tr{
   justify-content: space-between;
   margin-right: 25%;
   margin-left: 25%;
+  border: 2px solid black;
 }
 th{
   font-size: 1.2em;
@@ -153,14 +156,13 @@ td{
   padding-bottom: 10px;
   margin-bottom: 10px;
   font-family: 'Lucida Sans', sans-serif;
+  
 }
 table{ 
   width: 100%;
   position: absolute;
  }
 #cart-container {
-  display: grid;
-  grid-template-columns: minmax(150px, 1.33fr) minmax(150px, 2.33fr);
   text-align: center;
   width: auto;
 }
